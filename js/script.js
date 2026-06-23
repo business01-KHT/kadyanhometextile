@@ -1,17 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Kadyan Home Textile Website
 
-const cards = document.querySelectorAll(".product-card");
+console.log("Kadyan Home Textile Website Loaded Successfully");
 
-cards.forEach((card, index) => {
-card.style.opacity = "0";
-card.style.transform = "translateY(30px)";
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-setTimeout(() => {
-card.style.transition = "all 0.8s ease";
-card.style.opacity = "1";
-card.style.transform = "translateY(0)";
-}, index * 200);
-
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
+// Fade-in animation
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+document.querySelectorAll('.section, .product-card, .feature').forEach(el => {
+    observer.observe(el);
 });
