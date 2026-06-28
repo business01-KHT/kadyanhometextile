@@ -338,11 +338,22 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-.btn-outline{
-background:white;
-color:#8b6b1d;
+.btn{
+display:inline-block;
+padding:15px 36px;
+background:#c89b2b;
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+border-radius:40px;
+transition:.3s;
+border:2px solid #c89b2b;
+cursor:pointer;
 }
 
-.btn-outline:hover{
-background:#f4f4f4;
+.btn:hover{
+background:#a97d17;
+border-color:#a97d17;
+transform:translateY(-2px);
 }
