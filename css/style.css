@@ -192,3 +192,110 @@ font-size:32px;
     background-size:cover;
     background-position:center;
 }
+/* ===========================
+PREMIUM NAVBAR
+=========================== */
+
+.navbar{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#ffffff;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.nav-logo a{
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:bold;
+
+letter-spacing:1px;
+
+color:#8b6b2e;
+
+}
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+align-items:center;
+
+gap:35px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:#222;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:#c9a227;
+
+}
+
+.quote-btn{
+
+background:#c9a227;
+
+color:#fff !important;
+
+padding:12px 22px;
+
+border-radius:40px;
+
+}
+
+.quote-btn:hover{
+
+background:#8b6b2e;
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+}
+
+.nav-links{
+
+flex-direction:column;
+
+margin-top:15px;
+
+gap:18px;
+
+}
+
+}
