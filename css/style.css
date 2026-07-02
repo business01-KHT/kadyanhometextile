@@ -432,13 +432,14 @@ color:#8b6b1d;
     height:650px;
     object-fit:cover;
     display:block;
-    border-radius:10px;
-    cursor:pointer;
-    transition:0.3s;
+    border-radius:12px;
+    cursor:zoom-in;
+    transition:transform .35s ease, box-shadow .35s ease;
 }
 
 .product-gallery .product-card img:hover{
-    transform:scale(1.02);
+    transform:scale(1.04);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
 .product-gallery .product-card h3{
