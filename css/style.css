@@ -438,3 +438,25 @@ color:#8b6b1d;
     padding:20px;
     text-align:center;
 }
+/* Breadcrumb */
+
+.breadcrumb{
+    background:#f7f2e8;
+    padding:15px 8%;
+    font-size:15px;
+    color:#666;
+}
+
+.breadcrumb a{
+    color:#9b6c14;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+
+.breadcrumb span{
+    margin:0 6px;
+}
