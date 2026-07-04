@@ -468,3 +468,25 @@ color:#8b6b1d;
 .breadcrumb span{
     margin:0 6px;
 }
+/* Product Specification Cards */
+
+.features .feature{
+    border:1px solid #e8e8e8;
+    transition:all .3s ease;
+}
+
+.features .feature:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.features .feature h3{
+    color:#8b6b2e;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.features .feature p{
+    color:#555;
+    font-size:17px;
+}
