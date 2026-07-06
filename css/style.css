@@ -490,3 +490,33 @@ color:#8b6b1d;
     color:#555;
     font-size:17px;
 }
+/* Inquiry Form */
+
+.inquiry-form{
+    max-width:700px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea{
+    width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    font-family:inherit;
+}
+
+.inquiry-form input:focus,
+.inquiry-form textarea:focus{
+    outline:none;
+    border-color:#c9a227;
+}
+
+.inquiry-form .btn{
+    align-self:center;
+    min-width:220px;
+}
