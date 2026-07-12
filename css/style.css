@@ -562,3 +562,87 @@ color:#8b6b1d;
 .product-card img:hover{
     transform:scale(1.02);
 }
+/* ===========================
+   Mobile Responsive + Menu
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#8a6a22;
+    user-select:none;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        padding:15px 20px;
+    }
+
+    .nav-logo a{
+        font-size:18px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+        gap:15px;
+        padding:0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        list-style:none;
+    }
+
+    .hero-banner{
+        padding:80px 20px;
+    }
+
+    .hero-banner h1{
+        font-size:38px;
+        line-height:1.2;
+    }
+
+    .hero-banner p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .product-card img{
+        height:auto;
+    }
+
+    section{
+        padding:50px 20px;
+    }
+}
